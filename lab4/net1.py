@@ -40,7 +40,7 @@ class NetworkTopo( Topo ):
 
     # pylint: disable=arguments-differ
     def build( self, **_opts ):
-        s1 = self.addSwitch( 's2', ip="10.0.0.111" )
+        s1 = self.addSwitch( 's1', ip="10.0.0.111" )
 
         h1 = self.addHost( 'h1', ip="10.0.0.1" )
         h2 = self.addHost( 'h2', ip="10.0.0.2" )
