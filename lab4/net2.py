@@ -42,8 +42,8 @@ class NetworkTopo( Topo ):
     def build( self, **_opts ):
         s2 = self.addSwitch( 's2', ip="10.0.0.112" )
 
-        h3 = self.addHost( 'h1', ip="10.0.0.3" )
-        h4 = self.addHost( 'h2', ip="10.0.0.4" )
+        h3 = self.addHost( 'h3', ip="10.0.0.3" )
+        h4 = self.addHost( 'h4', ip="10.0.0.4" )
 
         for h, s in [ (h3, s2), (h4, s2) ]:
             self.addLink( h, s, bw=10, loss=0, delay='5ms' )
